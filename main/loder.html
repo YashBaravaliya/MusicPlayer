@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loding{
+            background-image: repeating-linear-gradient(90deg, hsla(168,0%,63%,0.09) 0px, hsla(168,0%,63%,0.09) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(168,0%,63%,0.09) 0px, hsla(168,0%,63%,0.09) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(168,0%,63%,0.09) 0px, hsla(168,0%,63%,0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(168,0%,63%,0.09) 0px, hsla(168,0%,63%,0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            z-index: -10;
+            animation-name: hide;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-play-state: initial;
+        }
+        
+        @keyframes hide{
+            0%,20%{
+                z-index: 12;
+                opacity: 1;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            70%{
+                opacity: 0.3;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+        .spinner {
+            height: 50px;
+            width: max-content;
+            font-size: 38px;
+            font-weight: 600;
+            font-family: monospace;
+            letter-spacing: 1em;
+            color: #f5f5f5;
+            filter: drop-shadow(0 0 10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner span {
+            animation: loading6454 1.75s ease infinite;
+        }
+
+        .spinner span:nth-child(2) {
+            animation-delay: 0.25s;
+        }
+
+        .spinner span:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+
+        .spinner span:nth-child(4) {
+            animation-delay: 0.75s;
+        }
+
+        .spinner span:nth-child(5) {
+            animation-delay: 1s;
+        }
+
+        .spinner span:nth-child(6) {
+            animation-delay: 1.25s;
+        }
+
+        .spinner span:nth-child(7) {
+            animation-delay: 1.5s;
+        }
+
+        @keyframes loading6454 {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+        p{
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus itaque accusantium quis aliquam repudiandae reiciendis, distinctio sapiente architecto quaerat libero vel minus ullam eos tempore magnam explicabo sed sint illo.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deleniti ipsam amet laudantium! Ipsam at provident praesentium voluptas atque aliquam rem accusamus voluptate, soluta nam et vero rerum nulla corporis ullam architecto, eum, sunt odit error impedit dolores dolorum delectus ducimus commodi? Nostrum hic dignissimos porro sunt ipsa, expedita perferendis quasi amet eveniet. Fugit, eaque.
+    <div class="loding">
+        <div class="spinner">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+    </p>
+    </div>
+
+</body>
+
+</html>
